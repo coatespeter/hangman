@@ -2,8 +2,9 @@ import random
 from words import word_list
 
 def get_word():
-    word = random.choice(word_list)
-    return word.upper()
+    with open('words.txt', 'r') as file:
+        words = file.read().splitlines()
+        return random.choice(words).upper()
 
 def play(word):
     word_completion = "_" * len(word)
