@@ -1,9 +1,15 @@
 import random
 from words import word_list
 
-def get_word():
-    word = random.choice(word_list)
+def get_word(difficulty):
+    if difficulty == "easy":
+        word = random.choice(word_list["easy"])
+    elif difficulty == "hard":
+        word = random.choice(word_list["hard"])
+    else:
+        raise ValueError("Invalid difficulty level")
     return word.upper()
+
 
 
 def play(word):
@@ -143,12 +149,13 @@ def display_hangman(tries):
 
 
 def main():
-    word = get_word()
+    print("Welcome to Hangman!")
+    difficulty = input("Choose difficulty (easy/hard): ").lower()
+    word = get_word(difficulty)
     play(word)
     while input("Play Again? (Y/N) ").upper() == "Y":
-        word = get_word()
+        word = get_word(difficulty)
         play(word)
-
 
 if __name__ == "__main__":
     main()
