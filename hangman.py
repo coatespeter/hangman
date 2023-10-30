@@ -150,7 +150,14 @@ def display_hangman(tries):
 
 def main():
     print("Welcome to Hangman!")
-    difficulty = input("Choose difficulty (easy/hard): ").lower()
+    
+    while True:
+        difficulty = input("Choose difficulty (easy/hard): ").lower()
+        if difficulty in ["easy", "hard"]:
+            break
+        else:
+            print("Invalid input. Please choose 'easy' or 'hard'.")
+
     word = get_word(difficulty)
     play(word)
     while input("Play Again? (Y/N) ").upper() == "Y":
