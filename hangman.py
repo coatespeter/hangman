@@ -1,6 +1,25 @@
 import random
 from words import word_list
 
+def get_guess():
+    while True:
+        guess = input("Please guess a letter or word: ").upper()
+        if len(guess) == 1 and guess.isalpha():
+            return guess
+        elif len(guess) > 1 and guess.isalpha():
+            return guess
+        else:
+            print("Invalid input. Please enter a single letter or a complete word.")
+
+def get_difficulty():
+    while True:
+        difficulty = input("Choose difficulty (easy/hard): ").lower()
+        if difficulty in ["easy", "hard"]:
+            return difficulty
+        else:
+            print("Invalid input. Please choose 'easy' or 'hard'.")
+
+
 def get_word(difficulty):
     if difficulty == "easy":
         word = random.choice(word_list["easy"])
@@ -35,7 +54,7 @@ def play(word):
     print(word_completion)
     print("\n")
     while not guessed and tries > 0:
-        guess = input("Please guess a letter or word: ").upper()
+        guess = get_guess()
         if len(guess) == 1 and guess.isalpha(): #isalpha() returns True if all characters in the string are alphabetic and there is at least one character, False otherwise.
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
@@ -154,7 +173,7 @@ def main():
     print("Welcome to Hangman!")
     
     while True:
-        difficulty = input("Choose difficulty (easy/hard): ").lower()
+        difficulty = get_difficulty()
         if difficulty in ["easy", "hard"]:
             break
         else:
