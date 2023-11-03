@@ -9,7 +9,7 @@ def get_guess():
         elif len(guess) > 1 and guess.isalpha():
             return guess
         else:
-            print("Invalid. Enter a letter or full word.")
+            print("Invalid input. Please enter a single letter or a complete word.")
 
 def get_difficulty():
     while True:
