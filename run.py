@@ -37,6 +37,7 @@ def play(word):
     guessed_letters = []
     guessed_words = []
     tries = 6
+    previous_guesses = [] #list of previous guesses
     print("""
     $$\   $$\                                                           
     $$ |  $$ |                                                          
@@ -53,8 +54,10 @@ def play(word):
     print(display_hangman(tries))
     print(word_completion)
     print("\n")
+
     while not guessed and tries > 0:
         guess = get_guess()
+
         if len(guess) == 1 and guess.isalpha(): #isalpha() returns True if all characters in the string are alphabetic and there is at least one character, False otherwise.
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
@@ -62,6 +65,7 @@ def play(word):
                 print(guess, "is not in the word.")
                 tries -= 1 #tries = tries - 1
                 guessed_letters.append(guess)
+                previous_guesses.append(guess)
             else:
                 print("Good job,", guess, "is in the word!")
                 guessed_letters.append(guess)
@@ -72,6 +76,7 @@ def play(word):
                 word_completion = "".join(word_as_list) #join() returns a string in which the string elements of sequence have been joined by str separator.
                 if "_" not in word_completion:
                     guessed = True
+                previous_guesses.append(guess)
         elif len(guess) == len(word) and guess.isalpha():
             if guess in guessed_words:
                 print("You already guessed the word", guess)
@@ -86,6 +91,7 @@ def play(word):
             print("Not a valid guess.")
         print(display_hangman(tries))
         print(word_completion)
+        print("Previous guesses:", ", ".join(previous_guesses))  # Displaying previous guesses
         print("\n")
     if guessed:
         print("Congratulations, you guessed the word! You win!")
