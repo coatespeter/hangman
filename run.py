@@ -85,6 +85,8 @@ def play(word):
     else:
         print("Sorry, you ran out of tries. The word was " + word + ". Maybe next time!")
 
+    
+
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
