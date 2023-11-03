@@ -76,6 +76,15 @@ def play(word):
                     guessed = True
                 previous_guesses.append(guess)
 
+        elif len(guess) > 1 and guess.isalpha():
+            if guess == word:
+                guessed = True
+                word_completion = word
+            else:
+                print(guess, "is not the word.")
+                tries -= 1
+                previous_guesses.append(guess)
+
         print(display_hangman(tries))
         print(word_completion)
         print("Previous guesses:", ", ".join(previous_guesses))
