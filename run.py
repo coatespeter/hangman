@@ -81,7 +81,8 @@ def play(word):
                 if "_" not in word_completion:
                     guessed = True
                 previous_guesses.append(guess)
-        elif len(guess) == len(word) and guess.isalpha():
+        elif len(guess) == len(word):
+            guess = get_word_guess()
             if guess in guessed_words:
                 print("You already guessed the word", guess)
             else: 
