@@ -11,6 +11,10 @@ def get_guess():
         else:
             print("Invalid input. Please enter a single letter or a complete word.")
 
+def get_word_guess():
+    guess = input("Please guess a word: ").upper()
+    return guess        
+
 def get_difficulty():
     while True:
         difficulty = input("Choose difficulty (easy/hard): ").lower()
@@ -80,13 +84,15 @@ def play(word):
         elif len(guess) == len(word) and guess.isalpha():
             if guess in guessed_words:
                 print("You already guessed the word", guess)
-            elif guess != word:
-                print(guess, "is not the word.")
-                tries -= 1 #tries = tries - 1
+            else: 
                 guessed_words.append(guess)
-            else:
-                guessed = True
-                word_completion = word
+                if guess != word:
+                    print(guess, "is not the word.")
+                    tries -= 1 #tries = tries - 1
+
+                else:
+                    guessed = True
+                    word_completion = word
         else:
             print("Not a valid guess.")
         print(display_hangman(tries))
