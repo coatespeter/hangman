@@ -31,10 +31,17 @@ Enjoy the game and good luck!
 ## Features
 
 - The game can be played in easy or hard mode, which determines the length of the word to be guessed.
+
 - The game keeps track of the number of incorrect guesses and displays the hangman in the terminal.
+
 - The game displays the word to be guessed with underscores for unguessed letters.
+
 - The player can make guesses by entering a single letter or an entire word.
+
 - The game notifies the player if they've already guessed a letter.
+
 - The game displays a list of previous guesses.
+
 - The game informs the player if they've won or lost the game, along with the correct word if they lose.
+
 - The player can choose to play the game again after a game is finished.
