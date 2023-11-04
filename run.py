@@ -38,7 +38,7 @@ def play(word):
     guessed = False
     guessed_letters = []
     tries = 6
-    previous_guesses = [] #list of previous guesses
+    previous_guesses = []  #list of previous guesses
 
     print("""
     $$\   $$\                                                           
