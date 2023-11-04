@@ -1,6 +1,7 @@
 import random
 from words import word_list
 
+
 def get_guess():
     while True:
         guess = input("Please guess a letter or word: ").upper()
@@ -11,6 +12,7 @@ def get_guess():
         else:
             print("Invalid input. Please enter a single letter or a complete word.")
 
+
 def get_difficulty():
     while True:
         difficulty = input("Choose difficulty (easy/hard): ").lower()
@@ -19,7 +21,9 @@ def get_difficulty():
         else:
             print("Invalid input. Please choose 'easy' or 'hard'.")
 
+
 def get_word(difficulty):
+
     if difficulty == "easy":
         word = random.choice(word_list["easy"])
     elif difficulty == "hard":
@@ -27,6 +31,7 @@ def get_word(difficulty):
     else:
         raise ValueError("Invalid difficulty level")
     return word.upper()
+
 
 def play(word):
     word_completion = "_" * len(word)
@@ -170,6 +175,7 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
+
 def main():
     print("Welcome to Hangman!")
 
@@ -189,3 +195,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
