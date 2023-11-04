@@ -193,5 +193,6 @@ def main():
         word = get_word(difficulty)
         play(word)
 
+
 if __name__ == "__main__":
     main()
