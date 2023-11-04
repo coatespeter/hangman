@@ -32,6 +32,8 @@ Enjoy the game and good luck!
 
 - The game can be played in easy or hard mode, which determines the length of the word to be guessed.
 
+![easy/hard image](../assets/easy-hard.png)
+
 - The game keeps track of the number of incorrect guesses and displays the hangman in the terminal.
 
 - The game displays the word to be guessed with underscores for unguessed letters.
@@ -45,3 +47,5 @@ Enjoy the game and good luck!
 - The game informs the player if they've won or lost the game, along with the correct word if they lose.
 
 - The player can choose to play the game again after a game is finished.
+
+## Wireframes
