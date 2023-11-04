@@ -30,7 +30,7 @@ Enjoy the game and good luck!
 
 ## Features
 
-- The game can be played in easy or hard mode, which determines the length of the word to be guessed.
+- The game can be played in easy or hard mode, which determines the length of the word to be guessed. In the easy mode, the worxs are made up with no more than 4 letters, while in the hard mode, the words are made up with no more than 7 letters.
 
 ![easy/hard image](assets/images/easy/hard.png)
 
