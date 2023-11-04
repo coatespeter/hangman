@@ -32,7 +32,7 @@ Enjoy the game and good luck!
 
 - The game can be played in easy or hard mode, which determines the length of the word to be guessed.
 
-![easy/hard image](../assets/easy-hard.png)
+![easy/hard image](/Users/petercoates/hangman/hangman-1/assets/images/easy/hard.png)
 
 - The game keeps track of the number of incorrect guesses and displays the hangman in the terminal.
 
