@@ -38,6 +38,8 @@ Enjoy the game and good luck!
 
 - The game displays the word to be guessed with underscores for unguessed letters.
 
+![image of word to be guessed](assets/images/easy/wordlenght.png)
+
 - The player can make guesses by entering a single letter or an entire word.
 
 - The game notifies the player if they've already guessed a letter.
