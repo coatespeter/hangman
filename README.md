@@ -87,4 +87,3 @@ Enjoy the game and good luck!
 - Heroku - This project uses **Heroku** to deploy the application.
 - VS Code - This project uses **VS Code** as the IDE for writing the code.
 - Google Chrome - This project uses **Google Chrome** as the browser for testing and viewing the application.
-
