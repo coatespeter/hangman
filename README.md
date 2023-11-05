@@ -40,6 +40,8 @@ Enjoy the game and good luck!
 
 - The game keeps track of the number of incorrect guesses and displays the hangman in the terminal.
 
+![image of hangman stages](assets/images/easy/hangmanstages.jpg)
+
 - The game displays the word to be guessed with underscores for unguessed letters.
 
 ![image of word to be guessed](assets/images/easy/wordlenght.png)
@@ -76,3 +78,13 @@ Enjoy the game and good luck!
 ![image of error message](assets/images/easy/errorhandling3.png)
 
 ## Wireframes
+
+## Technologies Used
+
+- Python - This project uses **Python** to write the game logic.
+- Git - This project uses **Git** for version control.
+- GitHub - This project uses **GitHub** to store and share all project code remotely.
+- Heroku - This project uses **Heroku** to deploy the application.
+- VS Code - This project uses **VS Code** as the IDE for writing the code.
+- Google Chrome - This project uses **Google Chrome** as the browser for testing and viewing the application.
+
