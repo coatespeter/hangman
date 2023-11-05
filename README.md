@@ -65,10 +65,14 @@ Enjoy the game and good luck!
 
 - The game displays an error message if the player does not type the difficulty level correctly. The difficulty level must be either 'easy' or 'hard' and written exactly as shown.
 
-![image of error message](assets/images/easy/eventhandling1.png)
+![image of error message](assets/images/easy/errorhandling1.png)
 
 - In the main game area, the game displays an error message if the player does not type a single letter or an entire word. The player must type a single letter or an entire word and written exactly as shown.
 
-![image of error message](assets/images/easy/eventhandling2.png)
+![image of error message](assets/images/easy/errorhandling2.png)
+
+-At the end of the game, the game displays an error message if the player does not type 'y' or 'n' to play again. The player must type 'y' or 'n' in either uppercase or lowercase.
+
+![image of error message](assets/images/easy/errorhandling3.png)
 
 ## Wireframes
