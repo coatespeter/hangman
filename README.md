@@ -61,4 +61,14 @@ Enjoy the game and good luck!
 
 - The player can choose to play the game again after a game is finished.
 
+## Error Handling
+
+- The game displays an error message if the player does not type the difficulty level correctly. The difficulty level must be either 'easy' or 'hard' and written exactly as shown.
+
+![image of error message](assets/images/easy/eventhandling1.png)
+
+- In the main game area, the game displays an error message if the player does not type a single letter or an entire word. The player must type a single letter or an entire word and written exactly as shown.
+
+![image of error message](assets/images/easy/eventhandling2.png)
+
 ## Wireframes

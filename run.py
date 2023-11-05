@@ -186,12 +186,21 @@ def main():
         else:
             print("Invalid input. Please choose 'easy' or 'hard'.")
 
-    word = get_word(difficulty)
-    play(word)
-
-    while input("Play Again? (Y/N) ").upper() == "Y":
+    while True:
         word = get_word(difficulty)
         play(word)
+
+        while True:
+            play_again = input("Play Again? (Y/N) ").upper()
+
+            if play_again in ["Y", "N"]:
+                break
+            else:
+                print("Invalid input. Please enter 'Y' or 'N'.")
+
+        if play_again != "Y":
+            break
+
 
 
 if __name__ == "__main__":
