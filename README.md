@@ -34,6 +34,10 @@ Enjoy the game and good luck!
 
 ![easy/hard image](assets/images/easy/hard.png)
 
+- After entering the difficulty level, the game displays the hangman in the terminal with a hangman ASCII art image.
+
+![image of hangman ASCII](assets/images/easy/ASCII.png)
+
 - The game keeps track of the number of incorrect guesses and displays the hangman in the terminal.
 
 - The game displays the word to be guessed with underscores for unguessed letters.
@@ -44,9 +48,16 @@ Enjoy the game and good luck!
 
 - The game notifies the player if they've already guessed a letter.
 
+![image of already guessed letter](assets/images/easy/alreadyguessed.png)
+
 - The game displays a list of previous guesses.
 
+![image of previous guesses](assets/images/easy/guesshistory.png)
+
 - The game informs the player if they've won or lost the game, along with the correct word if they lose.
+
+![image of win](assets/images/easy/congrats.png)
+![image of lose](assets/images/easy/sorry.png)
 
 - The player can choose to play the game again after a game is finished.
 
