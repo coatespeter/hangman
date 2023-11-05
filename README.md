@@ -77,7 +77,9 @@ Enjoy the game and good luck!
 
 ![image of error message](assets/images/easy/errorhandling3.png)
 
-## Wireframes
+## Wireframe
+
+![image of wireframe](assets/images/easy/wireframe.jpg)
 
 ## Technologies Used
 
