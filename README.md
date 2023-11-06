@@ -89,3 +89,35 @@ Enjoy the game and good luck!
 - Heroku - This project uses **Heroku** to deploy the application.
 - VS Code - This project uses **VS Code** as the IDE for writing the code.
 - Google Chrome - This project uses **Google Chrome** as the browser for testing and viewing the application.
+- GPT-3.5 - This project uses **GPT-3.5** to generate the word to be guessed.
+
+## Testing
+
+## Bugs
+
+- I came across a bus when deploying the site to Heroku. I got an Error saying that the package install had failed due to an OSError. I was able to google the problem and found that the error was in the requirements.txt file. The six package had changed as shown in the image and had to be changed back to six==1.16.0
+
+![image of error message heroku](assets/images/easy/deploynenterror.png)
+![six package error](assets/images/easy/sixpackageerror.png)
+![six package error fixed](assets/images/easy/sixpackagefix.png)
+
+## Deployment
+
+This project was deployed to Heroku using the following steps:
+
+- On the mainpage of your Heroku account, click on the 'New' button and select 'Create new app'.
+- Enter a name for your app and select the region closest to you.
+- Click on the 'Create app' button.
+- On the 'Deploy' tab, select 'GitHub' as the deployment method.
+- Search for the repository you want to deploy from and click on the 'Connect' button.
+- For this project, I used a Code Institute template in GitHub which had pre-installed packages necessary for deployment.
+- On the 'Settings' tab, click on add buildpack and select Python.
+- Click on add buildpack again and select node.js.
+- Ensure that the Python buildpack is above the node.js buildpack.
+- On the 'Deploy' tab, click on the 'Enable Automatic Deploys' button.
+- Click on the 'Deploy Branch' button.
+- Once the app has been deployed, click on the 'Open App' button to view the deployed site.
+
+
+
+## How to clone a GitHub repository
