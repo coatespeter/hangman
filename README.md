@@ -127,3 +127,5 @@ This project was deployed to Heroku using the following steps:
 - Change the current working directory to the location where you want the cloned directory to be made.
 - Type 'git clone' and then paste the URL you copied earlier.
 - Press 'Enter' to create your local clone.
+
+## Credits
