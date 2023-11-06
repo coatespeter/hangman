@@ -130,6 +130,6 @@ This project was deployed to Heroku using the following steps:
 
 ## Credits
 
-- The hangman ASCII art image was taken from https://patorjk.com/software/taag/#p=testall&h=3&v=3&f=Graffiti&t=Hangman
-- I used a youtube tutorial to help me with the logic of the game. The link to the tutorial is https://www.youtube.com/watch?v=m4nEnsavl6w&t=1s
-- I purchased a course called 100 days of python from Udemey and used the section on building a hangman game to help me with the game logic. The link to the course is https://www.udemy.com/course/100-days-of-code/
+- The hangman ASCII art image was taken from [https://patorjk.com/software/taag/#p=testall&h=3&v=3&f=Graffiti&t=Hangman]
+- I used a youtube tutorial to help me with the logic of the game. I also used this resource for the game stage images of the hangman. The link to the tutorial is [https://www.youtube.com/watch?v=m4nEnsavl6w&t=1s]
+- I used a course called 100 days of python from Udemey and specifically the section on building a hangman game to help me with the game logic. The link to the course is [https://www.udemy.com/course/100-days-of-code/]
