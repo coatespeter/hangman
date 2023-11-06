@@ -118,6 +118,12 @@ This project was deployed to Heroku using the following steps:
 - Click on the 'Deploy Branch' button.
 - Once the app has been deployed, click on the 'Open App' button to view the deployed site.
 
-
-
 ## How to clone a GitHub repository
+
+- On GitHub, navigate to the main page of the repository.
+- Above the list of files, click on the 'Code' button.
+- To clone the repository using SSH, click on the 'SSH' button and copy the link.
+- Open Git Bash.
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type 'git clone' and then paste the URL you copied earlier.
+- Press 'Enter' to create your local clone.
