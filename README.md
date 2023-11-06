@@ -36,7 +36,7 @@ Enjoy the game and good luck!
 
 - After entering the difficulty level, the game displays the hangman in the terminal with a hangman ASCII art image.
 
-![image of hangman ASCII](assets/images/easy/ASCII.png)
+![image of hangman ASCII](assets/images/easy/ASCII2.png)
 
 - The game keeps track of the number of incorrect guesses and displays the hangman in the terminal.
 
