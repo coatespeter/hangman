@@ -97,12 +97,12 @@ Enjoy the game and good luck!
 
 | Test Description | Expected Result | Actual Result | Pass/Fail |
 | --- | --- | --- | --- |
-| Test 1: To be able to select an easy or hard mode of the game with the letters 'e' or 'h' | All inputs other than 'e' or 'h' should return an invalid entry and ask to go again. | Works as described | PASS |
-| Test 2: | To be able to enter a single letter and if guessed, that letter to appear in previous guesses, non alphabet entries will didplay an error message. | Works correctly | PASS |
-| Test 3: | To be able to guess an entire word, if wrong, it will be added to the previous guesses section | Word guessing works for guesses and the game can be won by guessing the whole word | PASS |
-| Test 4: | Max out on guesses to make sure the game will not allow a player to submit more than 6 | If player guesses more than six times and does not win,  | The game tells the player they have run out of tries and tells them what the answer was. |
-| Test 5: | To be able to win the game by guessing all the letters or by guessing the entire word | Game can be won both ways and displays a congratulations message. | PASS |
-| Test 6: | Play again. Whether the player wins or looses, they should be prompted to play again. | Prompt to play again appears in both situations and only accepts the correct input of 'y' or 'n'. | PASS |
+| Test 1: To be able to select an easy or hard mode of the game with the letters 'e' or 'h' | The player can choose the difficulty level by entering 'easy' or 'hard' | 'easy' and 'hard' start the game. All other entries come up invalid | PASS |
+| Test 2: To be able to enter a single letter which will either replace an asterix or appear in previous guesses if not in the word. | When a player makes a guess, that guess should be represented in the word or the list of previous guesses. | Works correctly | PASS |
+| Test 3: To be able to guess an entire word| If the player guess a word, and it is correct, they win the game. If the word is wrong, it appears in the previously guessed list next to any letters guessed | Works as described | PASS |
+| Test 4: Test the upper limit of guesses is 6.| After 6 guesses and not winning the game, the player should be told they have ran out of guesses | The game does not let the player have more then 6 guesses. When the player has run out of guesses, the game informs them so and tells them what the answer was. | PASS |
+| Test 5: To be able to win the game by guessing all the letters or by guessing the entire word| The game is winnable | Game can be won both ways and displays a congratulations message. | PASS |
+| Test 6: Play again. Whether the player wins or looses, they should be prompted to play again.| To be asked to play again and given the command for yes and no | Prompt to play again appears in both situations and only accepts the correct input of 'y' or 'n'. | PASS |
 
 ## Bugs
 
