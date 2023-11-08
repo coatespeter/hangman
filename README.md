@@ -75,7 +75,7 @@ Enjoy the game and good luck!
 
 ![image of error message](assets/images/easy/errorhandling2.png)
 
--At the end of the game, the game displays an error message if the player does not type 'y' or 'n' to play again. The player must type 'y' or 'n' in either uppercase or lowercase.
+- At the end of the game, the game displays an error message if the player does not type 'y' or 'n' to play again. The player must type 'y' or 'n' in either uppercase or lowercase.
 
 ![image of error message](assets/images/easy/errorhandling3.png)
 
