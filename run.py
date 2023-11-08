@@ -49,7 +49,7 @@ def clear_screen():
 
 
 def play(word):
-    word_completion = "_" * len(word)
+    word_completion = "*" * len(word)
     guessed = False
     guessed_letters = []
     tries = 6
