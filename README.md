@@ -93,6 +93,15 @@ Enjoy the game and good luck!
 
 ## Testing
 
+| Test Description | Expected Result | Actual Result | Pass/Fail |
+| --- | --- | --- | --- |
+| Test 1: To be able to select an easy or hard mode of the game with the letters 'e' or 'h' | All inputs other than 'e' or 'h' should return an invalid entry and ask to go again. | Works as described | PASS |
+| Test 2: | To be able to enter a single letter and if guessed, that letter to appear in previous guesses, non alphabet entries will didplay an error message. | Works correctly | PASS |
+| Test 3: | To be able to guess an entire word, if wrong, it will be added to the previous guesses section | Word guessing works for guesses and the game can be won by guessing the whole word | PASS |
+| Test 4: | Max out on guesses to make sure the game will not allow a player to submit more than 6 | If player guesses more than six times and does not win,  | The game tells the player they have run out of tries and tells them what the answer was. |
+| Test 5: | To be able to win the game by guessing all the letters or by guessing the entire word | Game can be won both ways and displays a congratulations message. | PASS |
+| Test 6: | Play again. Whether the player wins or looses, they should be prompted to play again. | Prompt to play again appears in both situations and only accepts the correct input of 'y' or 'n'. | PASS |
+
 ## Bugs
 
 - I came across a bus when deploying the site to Heroku. I got an Error saying that the package install had failed due to an OSError. I was able to google the problem and found that the error was in the requirements.txt file. The six package had changed as shown in the image and had to be changed back to six==1.16.0
