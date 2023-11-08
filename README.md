@@ -92,6 +92,11 @@ Enjoy the game and good luck!
 - VS Code - This project uses **VS Code** as the IDE for writing the code.
 - Google Chrome - This project uses **Google Chrome** as the browser for testing and viewing the application.
 - GPT-3.5 - This project uses **GPT-3.5** to generate the word to be guessed.
+- Miro - This project uses **Miro** to create the flowchart.
+
+## Flowchart
+
+![image of flowchart](assets/images/easy/flowchart.png)
 
 ## Testing
 
@@ -144,3 +149,4 @@ This project was deployed to Heroku using the following steps:
 - The hangman ASCII art image was taken from [https://patorjk.com/software/taag/#p=testall&h=3&v=3&f=Graffiti&t=Hangman]
 - I used a youtube tutorial to help me with the logic of the game. I also used this resource for the game stage images of the hangman. The link to the tutorial is [https://www.youtube.com/watch?v=m4nEnsavl6w&t=1s]
 - I used a course called 100 days of python from Udemey and specifically the section on building a hangman game to help me with the game logic. The link to the course is [https://www.udemy.com/course/100-days-of-code/]
+- The clear screen function was taken from [https://stackoverflow.com/questions/2084508/clear-terminal-in-python]
