@@ -102,7 +102,7 @@ Enjoy the game and good luck!
 
 | Test Description | Expected Result | Actual Result | Pass/Fail |
 | --- | --- | --- | --- |
-| Test 1: To be able to select an easy or hard mode of the game with the letters 'easy' or 'hard' | The player can choose the difficulty level by entering 'easy' or 'hard' | 'easy' and 'hard' start the game. All other entries come up invalid | PASS |
+| Test 1: To be able to select an easy or hard mode of the game with the letters 'easy' or 'hard'. | The player can choose the difficulty level by entering 'easy' or 'hard' | 'easy' and 'hard' start the game. All other entries come up invalid | PASS |
 | Test 2: To be able to enter a single letter which will either replace an asterix or appear in previous guesses if not in the word. | When a player makes a guess, that guess should be represented in the word or the list of previous guesses. | Works correctly | PASS |
 | Test 3: To be able to guess an entire word| If the player guesses a word, and it is correct, they win the game. If the word is wrong, it appears in the previously guessed list next to any letters guessed | Works as described | PASS |
 | Test 4: Test the upper limit of guesses is 6.| After 6 guesses and not winning the game, the player should be told they have run out of guesses | The game does not let the player have more then 6 guesses. When the player has run out of guesses, the game informs them so and tells them what the answer was. | PASS |
@@ -150,3 +150,8 @@ This project was deployed to Heroku using the following steps:
 - I used a youtube tutorial to help me with the logic of the game. I also used this resource for the game stage images of the hangman. The link to the tutorial is [https://www.youtube.com/watch?v=m4nEnsavl6w&t=1s]
 - I used a course called 100 days of python from Udemey and specifically the section on building a hangman game to help me with the game logic. The link to the course is [https://www.udemy.com/course/100-days-of-code/]
 - The clear screen function was taken from [https://stackoverflow.com/questions/2084508/clear-terminal-in-python]
+
+## Acknowledgements
+
+- I would like to thank my mentor, Luke Buchanan, for his guidance and support throughout this project.
+- I Would also like to thank my wife Philippa for her support and encouragement throughout this project.
