@@ -1,6 +1,6 @@
 # Hangman
 
-![Am I responsive image](assets/images/readmeimg/amiresponsive.png)
+![Am I responsive image](assets/images/easy/amiresponsive.png)
 
 [Play Hangman Here](https://coates-hangman-5365a20f61de.herokuapp.com/)
 
