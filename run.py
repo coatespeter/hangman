@@ -1,14 +1,19 @@
 import random
 from words import word_list
+import subprocess
+import platform
 
+class Guess:
+    def __init__(self, user_guess):
+        self.user_guess = user_guess
 
 def get_guess():
     while True:
-        guess = input("Please guess a letter or word: ").upper()
-        if len(guess) == 1 and guess.isalpha():
-            return guess
-        elif len(guess) > 1 and guess.isalpha():
-            return guess
+        guess = Guess(input("Please guess a letter or word: ").upper())
+        if len(guess.user_guess) == 1 and guess.user_guess.isalpha():
+            return guess.user_guess
+        elif len(guess.user_guess) > 1 and guess.user_guess.isalpha():
+            return guess.user_guess
         else:
             print("Invalid input. Please enter a single letter or a complete word.")
 
@@ -33,6 +38,16 @@ def get_word(difficulty):
     return word.upper()
 
 
+def clear_screen():
+    if platform.system() == "Windows":
+        if platform.release() in {"10", "11"}:
+            subprocess.run("", shell=True)  # Needed to fix a bug regarding Windows 10; not sure about Windows 11
+        else:
+            subprocess.run(["cls"], shell=True)
+    else:  # Linux and Mac
+        print("\033c", end="")
+
+
 def play(word):
     word_completion = "_" * len(word)
     guessed = False
@@ -49,7 +64,7 @@ def play(word):
 \_| |_/\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                     __/ |                      
                    |___/                       
-""".format(" "))
+""".format(" "))    
 
     print(display_hangman(tries))
     print(word_completion)
