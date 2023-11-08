@@ -6,6 +6,7 @@ import platform
 class Guess:
     def __init__(self, user_guess):
         self.user_guess = user_guess
+        
 
 def get_guess():
     """
