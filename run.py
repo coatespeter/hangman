@@ -10,7 +10,6 @@ class Guess:
 def get_guess():
     """
     Prompt the player for a letter or word guess and validate the input.
-
     Returns:
         str: A valid letter or word guessed by the player.
     """
@@ -27,7 +26,6 @@ def get_guess():
 def get_difficulty():
     """
     Prompt the player to choose the game difficulty (easy/hard) and validate the input.
-
     Returns:
         str: The chosen difficulty level ('easy' or 'hard').
     """
@@ -37,25 +35,6 @@ def get_difficulty():
             return difficulty
         else:
             print("Invalid input. Please choose 'easy' or 'hard'.")
-
-
-def get_word(difficulty):
-    """
-    Get a random word based on the selected game difficulty.
-
-    Args:
-        difficulty (str): The game difficulty level ('easy' or 'hard').
-
-    Returns:
-        str: A random word from the specified difficulty category.
-    """
-    if difficulty == "easy":
-        word = random.choice(word_list["easy"])
-    elif difficulty == "hard":
-        word = random.choice(word_list["hard"])
-    else:
-        raise ValueError("Invalid difficulty level")
-    return word.upper()
 
 
 def clear_screen():
@@ -68,12 +47,33 @@ def clear_screen():
         print("\033c", end="")
 
 
+def get_word(difficulty):
+    """
+    Get a random word based on the selected game difficulty.
+
+    Args:
+        difficulty (str): The game difficulty level ('easy' or 'hard').
+
+    Returns:
+        str: A random word from the specified difficulty category.
+    """
+    clear_screen()
+    if difficulty == "easy":
+        word = random.choice(word_list["easy"])
+    elif difficulty == "hard":
+        word = random.choice(word_list["hard"])
+    else:
+        raise ValueError("Invalid difficulty level")
+    return word.upper()
+
+
 def play(word):
     """
     Play the Hangman game with the provided word.
 
     Args: word (str): The word to be guessed in the game.
     """
+    clear_screen() # Clear the screen before starting the game
     word_completion = "*" * len(word)
     guessed = False
     guessed_letters = []
