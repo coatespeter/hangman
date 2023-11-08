@@ -8,6 +8,12 @@ class Guess:
         self.user_guess = user_guess
 
 def get_guess():
+    """
+    Prompt the player for a letter or word guess and validate the input.
+
+    Returns:
+        str: A valid letter or word guessed by the player.
+    """
     while True:
         guess = Guess(input("Please guess a letter or word: ").upper())
         if len(guess.user_guess) == 1 and guess.user_guess.isalpha():
@@ -19,6 +25,12 @@ def get_guess():
 
 
 def get_difficulty():
+    """
+    Prompt the player to choose the game difficulty (easy/hard) and validate the input.
+
+    Returns:
+        str: The chosen difficulty level ('easy' or 'hard').
+    """
     while True:
         difficulty = input("Choose difficulty (easy/hard): ").lower()
         if difficulty in ["easy", "hard"]:
@@ -28,7 +40,15 @@ def get_difficulty():
 
 
 def get_word(difficulty):
+    """
+    Get a random word based on the selected game difficulty.
 
+    Args:
+        difficulty (str): The game difficulty level ('easy' or 'hard').
+
+    Returns:
+        str: A random word from the specified difficulty category.
+    """
     if difficulty == "easy":
         word = random.choice(word_list["easy"])
     elif difficulty == "hard":
@@ -49,6 +69,11 @@ def clear_screen():
 
 
 def play(word):
+    """
+    Play the Hangman game with the provided word.
+
+    Args: word (str): The word to be guessed in the game.
+    """
     word_completion = "*" * len(word)
     guessed = False
     guessed_letters = []
@@ -113,6 +138,15 @@ def play(word):
 
 
 def display_hangman(tries):
+    """
+    Display the Hangman ASCII art based on the number of remaining tries.
+
+    Args:
+        tries (int): The number of incorrect guesses remaining.
+
+    Returns:
+        str: The ASCII art representation of the Hangman's current state.
+    """
     stages = [  # final state: head, torso, both arms, and both legs
                 """
                    --------
@@ -188,6 +222,9 @@ def display_hangman(tries):
 
 
 def main():
+    """
+    The main function to start and manage the game.
+    """
     print("Welcome to Hangman!")
 
     while True:
