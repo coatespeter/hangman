@@ -3,7 +3,17 @@ from words import word_list
 import subprocess
 import platform
 
+
 class Guess:
+    """
+    A class to represent a player's guess in a game.
+
+    Attributes:
+        user_guess (str): The player's guessed letter or word.
+
+    Methods:
+        __init__(user_guess): Initializes a new Guess object with the provided guess.
+    """
     def __init__(self, user_guess):
         self.user_guess = user_guess
         
@@ -41,7 +51,8 @@ def get_difficulty():
 def clear_screen():
     if platform.system() == "Windows":
         if platform.release() in {"10", "11"}:
-            subprocess.run("", shell=True)  # Needed to fix a bug regarding Windows 10; not sure about Windows 11
+            subprocess.run("", shell=True)
+            print("\033c", end="")
         else:
             subprocess.run(["cls"], shell=True)
     else:  # Linux and Mac
@@ -58,7 +69,6 @@ def get_word(difficulty):
     Returns:
         str: A random word from the specified difficulty category.
     """
-    clear_screen()
     if difficulty == "easy":
         word = random.choice(word_list["easy"])
     elif difficulty == "hard":
@@ -98,8 +108,10 @@ def play(word):
 
     while not guessed and tries > 0:
         guess = get_guess()
+        clear_screen()
 
         if len(guess) == 1 and guess.isalpha():
+            clear_screen()
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
             elif guess not in word:
@@ -111,8 +123,8 @@ def play(word):
                 print("Good job,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
-                for index in indices:
+                indic = [i for i, letter in enumerate(word) if letter == guess]
+                for index in indic:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
                 if "*" not in word_completion:
